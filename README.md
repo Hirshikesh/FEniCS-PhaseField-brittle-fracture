@@ -1,1 +1,1 @@
-# FEniCS-phase-brittle-fracture
+# FEniCS-PhaseField-brittle-fracture
