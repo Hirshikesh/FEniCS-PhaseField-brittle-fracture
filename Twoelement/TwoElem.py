@@ -122,7 +122,7 @@ def eps_dev(u_old):
 #               Define Variational Problem
 #--------------------------------------------------------
 
-E_du = ((1 - phi_old)**2 + 1e-6)*inner(grad(v),sigma(u))*dxwhile 
+E_du = ((1 - phi_old)**2 + 1e-6)*inner(grad(v),sigma(u))*dx 
 
 E_phi = ( Gc*l_o*inner(grad(p),grad(q))+\
             ((Gc/l_o) + 2.*hist(unew))*inner(p,q)-\
