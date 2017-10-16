@@ -85,7 +85,7 @@ def hist(u):
 Top = top()
 Bottom = bottom()
 
-u_Lx = Expression("t",t = 0.0)
+u_Lx = Expression("t",t = 0.0, degree = 2)
 ftx =  DirichletBC(W.sub(1),u_Lx,Top)
 fty =  DirichletBC(W.sub(0),Constant(0.0),Top)
 
