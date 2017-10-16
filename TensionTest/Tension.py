@@ -145,7 +145,7 @@ class Middle(SubDomain):
 middle = Middle()    
 Top = top()
 Bottom = bottom()
-u_Lx = Expression("t",t = 0.0)
+u_Lx = Expression("t",t = 0.0, degree = 2)
 bclx= DirichletBC(W.sub(0), Constant(0.0), Bottom)
 bcly = DirichletBC(W.sub(1), Constant(0.0), Bottom)
 bcty = DirichletBC(W.sub(1), u_Lx, Top)
